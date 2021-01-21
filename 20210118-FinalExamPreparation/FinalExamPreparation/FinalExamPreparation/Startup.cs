@@ -38,18 +38,18 @@ namespace FinalExamPreparation
                     )
                 );
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(
-                    options =>
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //    .AddJwtBearer(
+            //        options =>
+            //        options.TokenValidationParameters = new TokenValidationParameters
+            //        {
+            //            ValidateIssuer = true,
+            //            ValidateAudience = true,
+            //            ValidateLifetime = true,
+            //            ValidateIssuerSigningKey = true
 
-                    }
-                );
+            //        }
+            //    );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,6 +59,8 @@ namespace FinalExamPreparation
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseMiddleware<GlobalExceptionMiddleware>();
 
             app.UseStaticFiles();
 
