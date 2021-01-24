@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 using System.Text.Json;
 using Bogus;
 
@@ -30,6 +31,18 @@ namespace BogusExample
             Console.WriteLine(serializedFakeOrder);
 
             ;
+
+            var client = new HttpClient();
+
+            // Act
+            var result = client.GetAsync("https://www.wikipedia.org/").Result;
+
+            Console.WriteLine(result.StatusCode);
+
+            var content = result.Content;
+
+            Console.WriteLine(content);
+
         }
 
   
