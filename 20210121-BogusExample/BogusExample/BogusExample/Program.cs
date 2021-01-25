@@ -32,17 +32,6 @@ namespace BogusExample
 
             ;
 
-            var client = new HttpClient();
-
-            // Act
-            var result = client.GetAsync("https://www.wikipedia.org/").Result;
-
-            Console.WriteLine(result.StatusCode);
-
-            var content = result.Content;
-
-            Console.WriteLine(content);
-
         }
 
   
