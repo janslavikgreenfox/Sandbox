@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace StringListDictArray
+namespace StringListDictArrayNmspc
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -12,7 +12,30 @@ namespace StringListDictArray
             StringPractice();
 
             ListPractice();
+
+            DictionaryPractice();
             
+        }
+
+        public static Dictionary<string,int> DictionaryPractice()
+        {
+            var dict = new Dictionary<string, int>();
+
+            dict.Add("Alpha", 107);
+            dict.Add("Bravo", 541);
+            dict.Add("Charlie", 899);
+
+            var key = dict.Keys;
+            var values = dict.Values;
+
+            var containsAlpha = dict.ContainsKey("Alpha");
+
+            return dict;
+        }
+
+        public static string Transform(string input)
+        {
+            return String.Join("",input.Split(' ')).ToLower();
         }
 
         public static void ListPractice()
@@ -33,7 +56,6 @@ namespace StringListDictArray
            listToTest.ForEach(x => { Console.WriteLine(x); });
 
             ;
-
         }
 
         public static void StringPractice()
@@ -79,6 +101,7 @@ namespace StringListDictArray
             var toLover1 = str1.ToLower();
             var toUpper = ".; \\/".ToUpper();
             var toUpper1 = str1.ToUpper();
+
             ;
         }
         
