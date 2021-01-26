@@ -14,7 +14,14 @@ namespace StringListDictArrayNmspc
             ListPractice();
 
             DictionaryPractice();
+
+            ArrayPractice();
             
+        }
+
+        public static void ArrayPractice()
+        {
+
         }
 
         public static Dictionary<string,int> DictionaryPractice()
