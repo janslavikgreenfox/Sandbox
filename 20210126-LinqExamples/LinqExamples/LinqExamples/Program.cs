@@ -36,6 +36,15 @@ namespace LinqExamples
             var union = A.Union(B);
             var intersection = A.Intersect(B);
             var difference = A.Except(B);
+
+            var nonDistinct = new int[] { -1, -1, 0, 1, 2, 2, -1};
+            var distinct = nonDistinct.Distinct().ToList();
+
+            // pa no, mi du la jan
         }
+
+
+
+
     }
 }

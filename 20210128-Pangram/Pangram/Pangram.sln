@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pangram", "Pangram\Pangram.csproj", "{B68D3C3B-81DB-4186-827F-9B35B331F607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProjectFinalExam", "XUnitTestProjectFinalExam\XUnitTestProjectFinalExam.csproj", "{82C89164-2566-4419-8437-ECEF8CCB1C1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B68D3C3B-81DB-4186-827F-9B35B331F607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68D3C3B-81DB-4186-827F-9B35B331F607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68D3C3B-81DB-4186-827F-9B35B331F607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68D3C3B-81DB-4186-827F-9B35B331F607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C89164-2566-4419-8437-ECEF8CCB1C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C89164-2566-4419-8437-ECEF8CCB1C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C89164-2566-4419-8437-ECEF8CCB1C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C89164-2566-4419-8437-ECEF8CCB1C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {551A843F-2326-4997-9991-F0C1E5A19C83}
+	EndGlobalSection
+EndGlobal
