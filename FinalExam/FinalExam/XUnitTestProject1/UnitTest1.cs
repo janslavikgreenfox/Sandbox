@@ -22,8 +22,6 @@ namespace XUnitTestProject1
         }
     }
 
-    /books/fiction/author/123/book/123
 
-    /book/fiction.json?author=123&book=45ef447
 
 }
