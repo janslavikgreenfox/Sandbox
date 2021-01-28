@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Pangram
@@ -8,6 +9,16 @@ namespace Pangram
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            var temp1 = new int[0][] {  };
+            var getLength1 = temp1.GetLength(0);
+            //var getLength2 = temp1.GetLength(1);
+            var length = temp1.Length;
+
+            var temp2 = new int[] { 1, 4, 6, -2, 12 };
+            //Array.Sort(temp2);
+            var temp3 = temp2.ToList();
+            temp3.Sort();
         }
 
         public static bool Pangram(string input)
