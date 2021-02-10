@@ -30,7 +30,10 @@ namespace FinalExamPreparation
         }
         private void LogException(Exception exception)
         {
-            File.AppendAllText("ExceptionLogger.txt",$"{DateTime.Now} : {exception.Message}");
+            var dateTimeNow = DateTime.Now.ToString("o");  
+            File.AppendAllText(
+                "ExceptionLogger.txt",
+                Environment.NewLine + dateTimeNow + $" : {exception.Message} ");
         }
 
         public Task ExceptionHandler(HttpContext httpContext, Exception exception)
