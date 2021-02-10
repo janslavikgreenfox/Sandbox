@@ -5,24 +5,57 @@
 }
 
 <!DOCTYPE html>
+<html>
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Wogastisburg E-shop</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
 
 <body>
-    <form action="~/register" method="post">
-        <br />
-        <label for="UserName">User Name</label>
-        <br />
-        <input type="text" id="UserName" name="UserName"></inputtype>
 
-        <br />
-        <label for="password">Password</label>
-        <br />
-        <input type="password" id="Password" name="Password"></inputtype>
+    <p class="lead text-capitalize">Welcome in the <mark>Wogastisburg</mark> E-shop</p>
 
-        <br /><br />
-        <input type="submit" id="submit" value="Register"></inputtype>
-    </form>
+    <p>You can buy anything you want if you like any costume jewellery or bijouterie.</p>
 
+    <p class="text-center text-uppercase">Text center  <kbd>Ctrl</kbd> + <kbd>W</kbd></p> 
+    <p class="text-right text-lowercase">Text right</p>
+
+    <div>
+        <blockquote class="blockquote">
+            <p>The Wogastisburg is the best jewellery e-shop ever.</p>
+            <footer>Qoute by cite <cite title="John Doe"></cite></footer>
+        </blockquote>
+    </div>
+
+    <div class="clearfix"></div>
+    <hr />
+    <div class="container">
+        <form action="~/register" method="post">
+            <br />
+            <div class="mb-3">
+                <label for="UserName">User Name</label>
+                <br />
+                <input type="text" id="UserName" name="UserName">
+            </div>
+            <br />
+            <div class="mb-3">
+                <label for="password">Password</label>
+                <br />
+                <input type="password" id="Password" name="Password">
+            </div>
+
+            <div class="m-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-input" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <br /><br />
+            <button type="submit" id="submit" value="Register" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
 </body>
+</html>

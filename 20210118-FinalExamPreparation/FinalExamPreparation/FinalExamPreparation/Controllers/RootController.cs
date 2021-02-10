@@ -28,7 +28,6 @@ namespace FinalExamPreparation.Controllers
         [HttpGet("register")]
         public async Task<IActionResult> RegisterGet()
         {
-            throw new NotImplementedException();
             return View("Index");
         }
 
