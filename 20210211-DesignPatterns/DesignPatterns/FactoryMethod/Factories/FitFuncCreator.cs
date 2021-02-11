@@ -7,6 +7,7 @@ namespace FactoryMethod
 {
     public abstract class FitFuncCreator
     {
+        // Creator role in the Factory Mehtod UML diagram
         public abstract IAbleToFittByFunction Create(FitFunctionType fitFunctionType);
     
     }

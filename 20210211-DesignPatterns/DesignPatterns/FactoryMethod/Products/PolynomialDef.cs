@@ -6,6 +6,7 @@ namespace FactoryMethod
 {
     class PolynomialDef : IAbleToFittByFunction
     {
+        // The Concrete product in the Factory Method UML diagram
         private double[] Coefficients { get; set; }
 
         public string GetTypeOfFit()

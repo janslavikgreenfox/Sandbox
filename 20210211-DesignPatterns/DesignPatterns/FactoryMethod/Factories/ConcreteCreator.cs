@@ -7,6 +7,7 @@ namespace FactoryMethod
 {
     public class ConcreteCreator : FitFuncCreator
     {
+        // Concrete creator in the Factory Method UML diagram
         public override IAbleToFittByFunction Create(FitFunctionType fitFunctionType)
         {
             switch (fitFunctionType)
