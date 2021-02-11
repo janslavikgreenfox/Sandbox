@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AbstractFactory
+namespace FactoryMethod
 {
     public interface IAbleToFittByFunction
     {

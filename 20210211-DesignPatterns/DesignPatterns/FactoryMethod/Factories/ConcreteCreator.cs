@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using static AbstractFactory.Program;
+using static FactoryMethod.Program;
 
-namespace AbstractFactory
+namespace FactoryMethod
 {
-    class ConcreteCreator : FitFuncCreator
+    public class ConcreteCreator : FitFuncCreator
     {
-        public IAbleToFittByFunction Create(FitFunctionType fitFunctionType)
+        public override IAbleToFittByFunction Create(FitFunctionType fitFunctionType)
         {
             switch (fitFunctionType)
             {

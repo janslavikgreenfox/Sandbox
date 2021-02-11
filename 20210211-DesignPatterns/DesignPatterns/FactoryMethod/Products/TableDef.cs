@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Linq;
 
-namespace AbstractFactory
+namespace FactoryMethod
 {
     class TableDef : IAbleToFittByFunction
     {
+        // The Concrete product in the Factory Method UML diagram
         private double[] X { get; set; }
         private double[] Y { get; set; }
 

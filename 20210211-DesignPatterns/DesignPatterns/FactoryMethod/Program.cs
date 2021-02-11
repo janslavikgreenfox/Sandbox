@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace AbstractFactory
+namespace FactoryMethod
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

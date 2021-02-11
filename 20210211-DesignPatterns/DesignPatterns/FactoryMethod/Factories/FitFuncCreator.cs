@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static FactoryMethod.Program;
 
-namespace AbstractFactory
+namespace FactoryMethod
 {
-    public class FitFuncCreator
+    public abstract class FitFuncCreator
     {
-        public virtual IAbleToFittByFunction Create()
-        {
-            return null;
-        }
+        public abstract IAbleToFittByFunction Create(FitFunctionType fitFunctionType);
+    
     }
 }
