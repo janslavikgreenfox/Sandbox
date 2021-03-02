@@ -12,7 +12,6 @@ public class HelloWorldController {
     @RequestMapping("")
     @ResponseBody
     public String helloWorld() {
-        //String temp = "Hello, this is the REST endpoint.";
         return new String("Hello, this is the REST endpoint");
     };
 }
