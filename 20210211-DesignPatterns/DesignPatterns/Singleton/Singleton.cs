@@ -7,11 +7,11 @@ namespace Singleton
     class Singleton
     {
         private readonly string Info;
-        private static Singleton TheOne;
+        private static Singleton TheOne = null;
         private Singleton(string info)
         {
             Info = info;
-            TheOne = null;
+            //TheOne = null;
         }
         public static Singleton GetInstance(string info)
         {
