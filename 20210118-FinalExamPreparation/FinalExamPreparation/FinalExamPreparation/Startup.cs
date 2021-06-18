@@ -68,8 +68,8 @@ namespace FinalExamPreparation
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
-                endpoints.MapControllers()
-                );
+                { endpoints.MapControllers(); }
+                ) ;
         }
     }
 }
